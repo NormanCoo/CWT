@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/REAL/CS/claude code/**)",
+      "Bash(npx create-next-app@14 temp-scaffold --typescript --tailwind --eslint --src-dir --app --import-alias=\"@/*\" --use-pnpm --no-turbopack)",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(npx create-next-app@14 temp-scaffold --typescript --tailwind --eslint --src-dir --app --import-alias=\"@/*\" --use-npm --no-turbopack)",
+      "Bash(cp -r 'D:/REAL/CS/claude code/temp-scaffold/src/app/.' 'D:/REAL/CS/claude code/Cross-Platform Calendar Task Manager/src/app/')",
+      "Bash(cp -r 'D:/REAL/CS/claude code/temp-scaffold/node_modules' 'D:/REAL/CS/claude code/Cross-Platform Calendar Task Manager/node_modules')",
+      "Bash(cp -r 'D:/REAL/CS/claude code/temp-scaffold/.git' 'D:/REAL/CS/claude code/Cross-Platform Calendar Task Manager/')",
+      "Bash(npm run *)",
+      "Bash(npx shadcn@latest init -y --style new-york --base-color zinc --css-variables)",
+      "Bash(npx shadcn@latest init --help)",
+      "Bash(npx shadcn@latest init --defaults --css-variables)",
+      "Bash(npx shadcn@latest add button card dialog form calendar input label toast)",
+      "Bash(npx shadcn@latest add button card dialog form calendar input label)",
+      "Bash(npx shadcn@latest add form)",
+      "Bash(npm install *)",
+      "Bash(npm uninstall *)",
+      "Bash(npm ls *)",
+      "Bash(git add *)"
+    ]
+  }
+}
