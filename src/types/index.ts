@@ -21,3 +21,15 @@ export interface Profile {
 
 export type TaskInsert = Omit<Task, "id" | "created_at">;
 export type TaskUpdate = Partial<TaskInsert>;
+
+export interface AuthUser {
+  id: string;
+  email: string;
+  full_name: string | null;
+  avatar_url: string | null;
+}
+
+export interface AuthState {
+  user: AuthUser | null;
+  loading: boolean;
+}

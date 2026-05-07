@@ -19,7 +19,17 @@
       "Bash(npm install *)",
       "Bash(npm uninstall *)",
       "Bash(npm ls *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(curl -s http://localhost:3456)",
+      "Bash(npx next *)",
+      "Bash(curl -s http://localhost:3457/login)",
+      "Bash(curl -s -o /dev/null -w \"%{redirect_url}\" http://localhost:3457/dashboard)",
+      "Bash(curl -s http://localhost:3457)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(PORT=3458 npx next dev -p 3458)",
+      "Bash(curl -s http://localhost:3458)",
+      "Bash(curl -s http://localhost:3458/login)",
+      "Bash(curl -s -o /dev/null -w \"Redirect: %{redirect_url}\\\\n\" http://localhost:3458/dashboard)"
     ]
   }
 }
