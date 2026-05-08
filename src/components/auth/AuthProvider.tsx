@@ -23,14 +23,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const supabase = createClient();
+    let cancelled = false;
 
     supabase.auth.getSession().then(({ data: { session } }) => {
+      if (cancelled) return;
       if (session?.user) {
         setUser(toAuthUser(session.user));
       } else {
         reset();
       }
-      setLoading(false);
+    }).catch(() => {
+      if (!cancelled) reset();
+    }).finally(() => {
+      if (!cancelled) setLoading(false);
     });
 
     const {
@@ -43,7 +48,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
     });
 
-    return () => subscription.unsubscribe();
+    return () => {
+      cancelled = true;
+      subscription.unsubscribe();
+    };
   }, [setUser, setLoading, reset]);
 
   return <>{children}</>;

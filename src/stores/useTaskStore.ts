@@ -29,7 +29,12 @@ export const useTaskStore = create<TaskState>((set, get) => ({
   setSelectedTask: (task) => set({ selectedTask: task }),
   setSelectedDate: (date) => set({ selectedDate: startOfDay(date).toISOString() }),
   setView: (view) => set({ view }),
-  addTask: (task) => set((state) => ({ tasks: [...state.tasks, task] })),
+  addTask: (task) =>
+    set((state) => ({
+      tasks: state.tasks.some((t) => t.id === task.id)
+        ? state.tasks.map((t) => (t.id === task.id ? task : t))
+        : [...state.tasks, task],
+    })),
   updateTask: (id, updates) =>
     set((state) => ({
       tasks: state.tasks.map((t) => (t.id === id ? { ...t, ...updates } : t)),
