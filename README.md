@@ -32,8 +32,8 @@ A lightweight, cross-platform calendar and task management app with real-time sy
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/NormanCoo/CP-CTM.git
-cd CP-CTM
+git clone https://github.com/NormanCoo/CWT.git
+cd CWT
 
 # 2. Install dependencies
 npm install
