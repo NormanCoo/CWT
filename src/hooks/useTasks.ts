@@ -66,7 +66,7 @@ export function useTasks() {
 
   const create = useCallback(
     async (data: TaskInsert) => {
-      const pendingId = crypto.randomUUID();
+      const pendingId = crypto.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
       const optimistic: Task = {
         id: pendingId,
         user_id: data.user_id,

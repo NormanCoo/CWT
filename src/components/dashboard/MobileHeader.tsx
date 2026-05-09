@@ -5,10 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { format } from "date-fns";
 import { zhCN } from "date-fns/locale";
-import { CalendarDays, Menu, LogOut, X } from "lucide-react";
+import { CalendarDays, Menu, LogOut, X, Sun, Moon } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { useAuthStore } from "@/stores/useAuthStore";
 import { useTaskStore } from "@/stores/useTaskStore";
+import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -20,6 +21,7 @@ export function MobileHeader() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const { signOut } = useAuth();
+  const { theme, setTheme } = useTheme();
   const user = useAuthStore((s) => s.user);
   const selectedDate = useTaskStore((s) => s.selectedDate);
   const setSelectedDate = useTaskStore((s) => s.setSelectedDate);
@@ -57,7 +59,7 @@ export function MobileHeader() {
       {/* Drawer */}
       <aside
         className={cn(
-          "fixed top-0 left-0 z-50 h-full w-60 bg-card border-r transform transition-transform duration-200 lg:hidden",
+          "fixed top-0 left-0 z-50 h-full w-60 bg-card border-r transition-transform duration-200 lg:hidden",
           open ? "translate-x-0" : "-translate-x-full",
         )}
       >
@@ -104,15 +106,25 @@ export function MobileHeader() {
               </p>
             </div>
           </div>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="w-full justify-start text-muted-foreground"
-            onClick={signOut}
-          >
-            <LogOut className="h-4 w-4 mr-2" />
-            Sign out
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="icon"
+              className="h-8 w-8"
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="flex-1 justify-start text-muted-foreground"
+              onClick={signOut}
+            >
+              <LogOut className="h-4 w-4 mr-2" />
+              Sign out
+            </Button>
+          </div>
         </div>
       </aside>
     </>
