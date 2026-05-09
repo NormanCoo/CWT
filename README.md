@@ -2,7 +2,7 @@
 
 A lightweight, cross-platform calendar and task management app with real-time sync across all your devices.
 
-**Production:** [https://cp-ctm.vercel.app](https://cp-ctm.vercel.app)
+**Production:** [https://cwt-calendar.vercel.app](https://cwt-calendar.vercel.app)
 
 ## Features
 
