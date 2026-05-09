@@ -2,9 +2,9 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "CP-CTM",
-    short_name: "CP-CTM",
-    description: "Cross-Platform Calendar Task Manager",
+    name: "CWT",
+    short_name: "CWT",
+    description: "Calendar With Tasks",
     start_url: "/",
     display: "standalone",
     background_color: "#09090b",

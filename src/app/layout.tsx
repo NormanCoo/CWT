@@ -4,13 +4,13 @@ import { AuthProvider } from "@/components/auth/AuthProvider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "CP-CTM",
-  description: "Cross-Platform Calendar Task Manager",
+  title: "CWT",
+  description: "Calendar With Tasks",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "CP-CTM",
+    title: "CWT",
   },
   icons: {
     apple: "/icon-192x192.png",

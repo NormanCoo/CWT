@@ -1,4 +1,4 @@
-# 项目名称：Cross-Platform Calendar Task Manager (CP-CTM)
+# 项目名称：CWT (Calendar With Tasks)
 # 开发者指令集：用于 Claude Code 引导开发
 
 ## 1. 项目愿景

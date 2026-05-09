@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Cross-Platform Calendar Task Manager (CP-CTM) — a lightweight, cross-platform calendar/planning app with a responsive web UI (desktop) and PWA (mobile). Data syncs in real-time across devices via Supabase.
+Cross-Platform Calendar Task Manager (CP-CTM) → **CWT** (Calendar With Tasks) — a lightweight, cross-platform calendar/planning app with a responsive web UI (desktop) and PWA (mobile). Data syncs in real-time across devices via Supabase.
 
 ## Tech Stack
 

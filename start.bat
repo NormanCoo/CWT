@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
 echo ============================================
-echo   CP-CTM
+echo   CWT - Calendar With Tasks
 echo ============================================
 echo.
 

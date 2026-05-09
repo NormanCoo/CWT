@@ -21,7 +21,7 @@ export function Sidebar() {
     <aside className="hidden lg:flex lg:flex-col lg:w-60 lg:fixed lg:inset-y-0 bg-card border-r">
       <div className="flex items-center gap-2 px-6 h-14 border-b">
         <CalendarDays className="h-5 w-5 text-primary" />
-        <span className="font-semibold">CP-CTM</span>
+        <span className="font-semibold">CWT</span>
       </div>
 
       <nav className="flex-1 px-3 py-4 space-y-1">
