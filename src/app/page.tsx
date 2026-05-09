@@ -18,7 +18,7 @@ export default function Home() {
 
         <div className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tight">
-            CWT
+            CWT - Calendar with tasks
           </h1>
           <p className="text-lg text-muted-foreground">
             Plan your tasks across all your devices.

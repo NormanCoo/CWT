@@ -66,7 +66,7 @@ export function MobileHeader() {
         <div className="flex items-center justify-between px-6 h-14 border-b">
           <div className="flex items-center gap-2">
             <CalendarDays className="h-5 w-5 text-primary" />
-            <span className="font-semibold">CWT</span>
+            <span className="font-semibold">CWT - Calendar with tasks</span>
           </div>
           <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
             <X className="h-4 w-4" />

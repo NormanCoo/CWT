@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "CWT",
+    name: "CWT - Calendar with tasks",
     short_name: "CWT",
     description: "Calendar With Tasks",
     start_url: "/",

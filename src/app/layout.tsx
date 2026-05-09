@@ -4,13 +4,13 @@ import { AuthProvider } from "@/components/auth/AuthProvider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "CWT",
+  title: "CWT - Calendar with tasks",
   description: "Calendar With Tasks",
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "CWT",
+    title: "CWT - Calendar with tasks",
   },
   icons: {
     apple: "/icon-192x192.png",
