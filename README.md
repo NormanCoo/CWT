@@ -2,7 +2,7 @@
 
 A lightweight, cross-platform calendar and task management app with real-time sync across all your devices.
 
-**Production:** [https://cwt.vercel.app](https://cwt.vercel.app)
+**Production:** [https://cp-ctm.vercel.app](https://cp-ctm.vercel.app)
 
 ## Features
 
@@ -34,7 +34,6 @@ A lightweight, cross-platform calendar and task management app with real-time sy
 # 1. Clone the repo
 git clone https://github.com/NormanCoo/CP-CTM.git
 cd CP-CTM
-# (repo name remains CP-CTM for now)
 
 # 2. Install dependencies
 npm install
